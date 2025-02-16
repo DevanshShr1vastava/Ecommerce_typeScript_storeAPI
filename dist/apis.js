@@ -93,8 +93,18 @@ export const getAllCategories = () => __awaiter(void 0, void 0, void 0, function
     try {
         const response = yield fetch('https://fakestoreapi.com/products/categories');
         const categoryData = yield response.json();
+        const addDataList = document.querySelector('#addList');
+        const updateDataList = document.querySelector('#updateList');
         categoryData.forEach((category) => {
             const dropDownCategoryElement = document.createElement('li');
+            const addListOptionElement = document.createElement('option');
+            const updateListOptionElement = document.createElement('option');
+            addListOptionElement.value = `${category}`;
+            addListOptionElement.textContent = `${category}`;
+            updateListOptionElement.value = `${category}`;
+            updateListOptionElement.textContent = `${category}`;
+            addDataList.appendChild(addListOptionElement);
+            updateDataList.appendChild(updateListOptionElement);
             dropDownCategoryElement.innerHTML = `<a class="dropdown-item" href="#">${category}</a>`;
             categorySelectDropdown.appendChild(dropDownCategoryElement);
         });

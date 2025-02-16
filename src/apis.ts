@@ -124,12 +124,27 @@ export const getProductsLimit = async(limit:number)=>{
 export const getAllCategories = async()=>{
     try{
 
-        const response = await fetch('https://fakestoreapi.com/products/categories')
+        const response = await fetch('https://fakestoreapi.com/products/categories');
         const categoryData = await response.json();     
+        const addDataList = document.querySelector('#addList') as HTMLDataListElement;
+        const updateDataList = document.querySelector('#updateList') as HTMLDataListElement;
+
         categoryData.forEach((category:object)=>{
             const dropDownCategoryElement = document.createElement('li');
+            const addListOptionElement = document.createElement('option') as HTMLOptionElement;
+            const updateListOptionElement = document.createElement('option') as HTMLOptionElement;
+
+            addListOptionElement.value = `${category}`;
+            addListOptionElement.textContent = `${category}`;
+            updateListOptionElement.value = `${category}`;
+            updateListOptionElement.textContent = `${category}`;
+
+            addDataList.appendChild(addListOptionElement);
+            updateDataList.appendChild(updateListOptionElement);
+
             dropDownCategoryElement.innerHTML = `<a class="dropdown-item" href="#">${category}</a>`
             categorySelectDropdown.appendChild(dropDownCategoryElement);
+
         })
     }
     catch(err){

@@ -92,7 +92,14 @@
           <div class="col-12">
             <!--select thingy-->
             <label for="prod-category" class="form-label">Product Category</label>
-            <input type="text" class="form-control" id="prod-category">
+            <input class="form-control" list="addList" type="text" class="text" id = 'prod-category'>
+            <datalist id="addList">
+              <!-- <option value = 'electronics'>Electronics</option>
+              <option value = 'jewelry'>Jewelry</option>
+              <option value = "men's clothing">Men's Clothing</option>
+              <option value = "women's clothing">Women's Clothing</option> -->
+            </datalist>
+              
           </div>
           <div class="col-12">
             <label for ='prod-image' class='form-label'>Product Image URL</label>
@@ -140,9 +147,14 @@
           </div>
           <div class="col-12">
             <!--select thingy-->
-            <label for="update-prod-category" class="form-label">Datalist example</label>
-            <input name='updateProdCategory' class="form-control" id="update-prod-category" placeholder="" autocomplete="off">
-            
+            <label for="update-prod-category" class="form-label">Select Category</label>
+            <input class='form-control' list="updateList" name='updateProdCategory' class="form-control" id="update-prod-category" placeholder="" autocomplete="off">
+            <datalist id="updateList">
+              <!-- <option value = 'electronics'>Electronics</option>
+              <option value = 'jewelry'>Jewelry</option>
+              <option value = "men's clothing">Men's Clothing</option>
+              <option value = "women's clothing">Women's Clothing</option> -->
+            </datalist>
           </div>
           <div class="col-12">
             <label for ='update-prod-image' class='form-label'>Product Image URL</label>
