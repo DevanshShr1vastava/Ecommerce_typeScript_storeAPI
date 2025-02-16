@@ -4,7 +4,7 @@
 - had to assign types for all dom elements accordingly (HTMLElement, HTMLInputElement, HTMLFormElement)
 - FormHandling using HTMLFormElement and creating a formElements interface extending HTMLFormControlsCollection to select and work with the input fields within the form
 - modularized better, kept ts files within the src folder and the compiled js files within the dist folders configured using tsconfig.json so that whenever we use the command npx tsc, it picks up the files from the src folder and stores the compiled js files in the dist folder
-- 
+- datalist added to select category instead of a textbox for adding or updating products, categories are taken from the fakestoreapi and appended on the element.
 
 ### Demonstrations
 #### UI Demo
