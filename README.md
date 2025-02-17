@@ -16,8 +16,14 @@
 #### Adding new products
 ![addingProduct-ezgif com-crop](https://github.com/user-attachments/assets/053bb9dc-8637-4345-9725-2acaab33c54c)
 
+since it wasn't recorded in the screen capture, when clicking the category input box, a dropdown list appears to select categories from using a data list
+
+![image](https://github.com/user-attachments/assets/c8d23f53-cd03-436b-91c3-e454fe6d4559)
+
+
 #### deleting and deleting added products
 ![deletingandaddingproduct-ezgif com-crop](https://github.com/user-attachments/assets/fcacea86-9f37-434d-b027-fcacc5634cd0)
+
 
 #### Display products by category demo
 ![categoryDemo-ezgif com-crop](https://github.com/user-attachments/assets/c6896cc2-752b-43fe-ba17-4e77f03f135a)
@@ -25,3 +31,8 @@
 #### Opening product descriptions and editing products
 
 ![showingproductandediting-ezgif com-crop](https://github.com/user-attachments/assets/1d4b12ea-e758-4a38-adc6-15c290c1fe92)
+
+same as in when adding product modal form appears, for edit it shows similar categories to what is in the text box
+![image](https://github.com/user-attachments/assets/fda2012f-edac-4d7f-acf9-29357030e50f)
+
+
